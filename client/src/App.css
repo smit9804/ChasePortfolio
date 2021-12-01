@@ -60,7 +60,8 @@ body {
 .imgtransition {
   background-image: linear-gradient(#61e2ff, rgb(255, 239, 209));
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .container {
   display: flex;

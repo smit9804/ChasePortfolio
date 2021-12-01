@@ -21,7 +21,7 @@ const styles = {
       flexDirection: "row",
       justifyContent: "space-between",
       width: "-webkit-fill-available",
-      background: "linear-gradient(#b9f2ff, #61e2ff)",
+      background: "linear-gradient(#3e96aa, #1b4a55)",
   },
   contentbox: {
       display: "flex",
@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <header style={styles.header}>
-            <h1><Link to="/" >Chase Smith</Link></h1>
+            <h1><Link to="/" style={{color: "antiquewhite"}}>Chase Smith</Link></h1>
             <div class="links">
             <Button style={styles.links} href="#about">
                 About

@@ -20,7 +20,7 @@ const styles = {
     contentbox: {
         display: "flex",
         justifyContent: "center",
-        width: "1000px",
+        width: "fit-content",
         margin: "0px auto",
         paddingTop: "100px",
         paddingBottom: "50px"
@@ -37,9 +37,22 @@ const styles = {
         paddingTop: "50px"
     },
     image: {
-        height: "800px",
+        height: "600px",
         width: "auto",
-        
+        marginTop: "53px"
+    },
+    imageOU: {
+        height: "300px",
+        marginTop: "203px",
+        background: "none",
+        borderRadius: "300px",
+        width: "400px",
+    },
+    imageCG: {
+        marginTop: "203px",
+        height: "300px",
+        marginLeft: "20px",
+        marginRight: "20px"
     }
 };
 
@@ -48,7 +61,9 @@ const Main = () => {
     <div>
         <body>
         <div class="imgtransition">
-            <img style={styles.image} src="images/chase.jpg" alt="Profile" />
+            <img style={styles.imageOU} src="images/ou1.png" alt="OU Logo" />
+            <img style={styles.image} src="images/Well dressed.jpeg" alt="Profile" />
+            <img style={styles.imageCG} src="images/cg.png" alt="CG Logo" />
         </div>
         <div class="parchment">
             <div style={styles.contentbox} id="about">
@@ -56,7 +71,7 @@ const Main = () => {
                 Well howdy there! My name is Chase Smith. Although I have spent
                 most of my life as a blue collar worker through my time in the
                 U.S. Coast Guard and civilian life, I finally found my calling in
-                2020 into Software Development and Web Development.{" "}
+                2020 into Software Engineering and Web Development.{" "}
             </h1>
             <hr/>
             </div>
@@ -64,8 +79,11 @@ const Main = () => {
         </body>
         <div id="projects"><h1 style={{fontSize: "60px", marginBottom: "50px"}}>Current Projects:</h1>
             <h1 class="johndeere" style={{height: "100px", width: "600px"}}><Link style={{color: "darkslategray"}}to="/BackyardBeer">BackyardBeer</Link></h1>
+            <hr/>
             <h1 class="johndeere" style={{height: "100px", width: "600px"}}><Link style={{color: "#841617"}}to="/NCAAF">NCAAF Ultimate</Link></h1>
+            <hr/>
             <h1 class="johndeere" style={{height: "100px", width: "600px"}}><Link style={{color: "black"}}to="/AEG">Alpha Elite Gaming</Link></h1>
+            <hr/>
             <h1 class="johndeere" style={{height: "100px", width: "600px"}}><Link style={{color: "goldenrod"}} to="/SmithSite">SmithSite</Link></h1>
         </div>
         <footer style={styles.footer}>
